@@ -14,5 +14,16 @@ int tamanho_deque (struct Deque *dq);
 int deque_vazio (struct Deque *dq);
 // se o deque não existir ou estiver vazio, retorna 0. Caso contrário, valor recebe dq->incio e retorna 1
 int consultainicio_deque (struct Deque *dq, int *valor);
-
+// se o deque não existir ou estiver vazio, retorna 0. Caso contrário, valor recebe dq->final e retorna 1
+int consutlafinal_deque (struct Deque *dq, int *valor);
+// retorna 1 se a insereção teve êxito, retorna 0 caso tenha falhado
+int insereinicio_deque (struct Deque *dq, int valor);
+// retorna 1 se a inserção teve êxito, retorna 0 caso tenha falhado
+int inserefinal_deque (struct Deque *dq, int valor);
+// retorna 1 se a remoção teve êxito, retorna 0 caso tenha falhado
+int removeinicio_deque (struct Deque *dq, int *valor);
+// retorna 1 se a insereção teve êxito, retorna 0 caso tenha falhado
+int removefinal_deque (struct Deque *dq, int *valor);
+//
+void imprime_deque (struct Deque *dq);
 #endif
